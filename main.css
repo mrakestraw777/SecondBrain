@@ -2,8 +2,20 @@
     display: none;
 } */
 
+*{
+    box-sizing: border-box;
+}
+
 .hashTagItem{
     padding: .7rem;
     margin: 5px 0px 5px 0px;
     max-width: 50%;
+}
+
+button{
+    height: 4rem;
+    width: 100%;
+    max-width: 700px;
+    padding: 1rem 4rem;
+    font-size: 2rem;
 }
