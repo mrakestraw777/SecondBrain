@@ -1,0 +1,9 @@
+/* .innerListDiv{
+    display: none;
+} */
+
+.hashTagItem{
+    padding: .7rem;
+    margin: 5px 0px 5px 0px;
+    max-width: 50%;
+}

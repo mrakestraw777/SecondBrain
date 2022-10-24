@@ -3,7 +3,7 @@ DOC so that a later forEach loop can place a
 "click" evenListener on them for further
 manipulation*/
 
-const myDivs = document.querySelectorAll(".hashTagItem");
+const myHashTagItems = document.querySelectorAll(".hashTagItem");
 
 
 /* This function selectedHashTag has the sole purpose
@@ -14,9 +14,9 @@ function selectedNumber(input)
     console.log("Div has been clicked");
     // console.log(input.innerHTML)
     // console.log(input.target)
-    if(input.style.backgroundColor != 'grey')
+    if(input.style.backgroundColor != 'rgb(205, 205, 205)')
     {
-        input.style.backgroundColor = 'grey'
+        input.style.backgroundColor = 'rgb(205, 205, 205)';
         
     }
     else
@@ -26,7 +26,7 @@ function selectedNumber(input)
     
 }
 
-myDivs.forEach(placeHolderForCurrentDivInLoop => {
+myHashTagItems.forEach(placeHolderForCurrentDivInLoop => {
     placeHolderForCurrentDivInLoop.addEventListener("click",  e => {
         
         selectedNumber(placeHolderForCurrentDivInLoop)
@@ -41,15 +41,15 @@ instead of parsing an int. */
 function getSelectedHashTags()
 {
     let hashTagList = []
-    myDivs.forEach(e => {
-        if(e.style.backgroundColor == 'grey')
+    myHashTagItems.forEach(e => {
+        if(e.style.backgroundColor == 'rgb(205, 205, 205)')
         {
             hashTagList.push(`#${e.innerHTML} `);
         }
     });
     
-    myDivs.forEach(e => {
-        if(e.style.backgroundColor == 'grey')
+    myHashTagItems.forEach(e => {
+        if(e.style.backgroundColor == 'rgb(205, 205, 205)')
         {
             e.style.backgroundColor = 'white';
         }
