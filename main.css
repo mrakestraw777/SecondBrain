@@ -6,16 +6,30 @@
     box-sizing: border-box;
 } */
 
-.hashTagItem{
+li{
     padding: .7rem;
     margin: 5px 0px 5px 0px;
     max-width: 50%;
+    font-size: 1.2rem;
 }
 
 button{
-    height: 4rem;
+    min-height: 4rem;
     width: 100%;
     max-width: 700px;
     padding: 1rem 4rem;
     font-size: 2rem;
+}
+
+.innerListDiv {
+    display: none;
+}
+
+li ~ ul{
+    display: none;
+}
+
+.headerHashTag {
+    font-size: 3rem;
+    font-weight: 600;
 }
