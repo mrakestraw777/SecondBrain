@@ -65,7 +65,7 @@ myHashTagItems.forEach(placeHolderForCurrentDivInLoop => {
 /* This funtion */
 function getSelectedHashTags()
 {
-    let hashTagList = []
+    let hashTagList = [`Explanatory Note:  `]
     myHashTagItems.forEach(e => {
         if(e.style.backgroundColor == colorForSelectedTags)
         {
