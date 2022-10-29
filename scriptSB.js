@@ -69,7 +69,7 @@ function getSelectedHashTags()
     myHashTagItems.forEach(e => {
         if(e.style.backgroundColor == colorForSelectedTags)
         {
-            hashTagList.push(`#${e.innerHTML} `);
+            hashTagList.push(`\n #${e.innerHTML} `);
         }
     });
     
