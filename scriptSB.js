@@ -4,6 +4,7 @@ DOC so that a later forEach loop can place a
 manipulation*/
 
 const myHashTagItems = document.querySelectorAll("li");
+// const secondBrainNoteOrLink = document.querySelectorAll("#secondBrainNote");
 var colorForSelectedTags = "rgb(205, 205, 205)";
 var currentDate = new Date;
 
@@ -65,7 +66,14 @@ myHashTagItems.forEach(placeHolderForCurrentDivInLoop => {
 /* This funtion */
 function getSelectedHashTags()
 {
-    let hashTagList = [`Explanatory Note:  `]
+
+    const secondBrainNoteOrLink = document.getElementById('secondBrainNote').value;
+    console.log(secondBrainNoteOrLink);
+
+    let textifiedText = JSON.stringify(secondBrainNoteOrLink);
+    let hashTagList = [`${textifiedText}
+    
+    Explanatory Note:  `]
     myHashTagItems.forEach(e => {
         if(e.style.backgroundColor == colorForSelectedTags)
         {

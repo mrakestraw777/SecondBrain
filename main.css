@@ -5,6 +5,14 @@
 /* *{
     box-sizing: border-box;
 } */
+*{
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    margin: 1%;
+}
 
 li{
     padding: .7rem;
@@ -19,6 +27,7 @@ button{
     max-width: 700px;
     padding: 1rem 4rem;
     font-size: 2rem;
+    margin: 5px;
 }
 
 .innerListDiv {
@@ -32,4 +41,12 @@ li ~ ul{
 .headerHashTag {
     font-size: 3rem;
     font-weight: 600;
+}
+
+form{
+    width: 100%;
+}
+
+textarea{
+    max-width: 95%;
 }

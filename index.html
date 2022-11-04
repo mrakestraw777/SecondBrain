@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+
+    <form action="#">
+        <textarea id="secondBrainNote" name="secondBrainNote" rows="4" cols="50" placeholder="Put your note or link here."></textarea>
+      </form>
+      
     
     <ul class="headerUnorderedList">
         
@@ -18,7 +23,12 @@
                         <li>Date_Ideas</li>
                             <ul>
                                 <li>3_Day_Weekend</li>
-                                <li>Dinner</li>
+                                <li>Restaurant</li>
+                                    <ul>
+                                        <li>Dinner</li>
+                                        <li>Lunch</li>
+                                        <li>Brunch</li>
+                                    </ul>
                             </ul>
                         <li>Memories</li>
                     </ul>
@@ -103,7 +113,7 @@
     </ul>
 
 
-    <button onclick="getSelectedHashTags()">Copy HashTags to Clipboard</button>
+    <button onclick="getSelectedHashTags()">Copy HashTags to Clipboard</button> <button onclick="getSelectedHashTags()">HashTags for Search</button>
 
     <script src="scriptSB.js">
 
