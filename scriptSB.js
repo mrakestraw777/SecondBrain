@@ -4,7 +4,7 @@ DOC so that a later forEach loop can place a
 manipulation*/
 
 const myHashTagItems = document.querySelectorAll("li");
-// const secondBrainNoteOrLink = document.querySelectorAll("#secondBrainNote");
+// const secondBrainNoteOrLink = JSON.stringify(document.querySelectorAll("#secondBrainNote"));
 var colorForSelectedTags = "rgb(205, 205, 205)";
 var currentDate = new Date;
 
@@ -71,15 +71,40 @@ function getSelectedHashTags()
     console.log(secondBrainNoteOrLink);
 
     let textifiedText = JSON.stringify(secondBrainNoteOrLink);
-    let hashTagList = [`${textifiedText}
+
+    if(textifiedText == "")
+    {
+        let hashTagList = [`Explanatory Note:  `]
+        myHashTagItems.forEach(e => {
+            if(e.style.backgroundColor == colorForSelectedTags)
+            {
+                hashTagList.push(`\n #${e.innerHTML} `);
+            }
+        });
+        hashTagList.push(`
     
-    Explanatory Note:  `]
-    myHashTagItems.forEach(e => {
-        if(e.style.backgroundColor == colorForSelectedTags)
-        {
-            hashTagList.push(`\n #${e.innerHTML} `);
-        }
-    });
+        ${currentDate}`);
+
+        console.log(hashTagList)
+
+        navigator.clipboard.writeText(hashTagList);
+    } else
+    {
+        let hashTagList = [`${textifiedText}\nExplanatory Note:  `];
+        myHashTagItems.forEach(e => {
+            if(e.style.backgroundColor == colorForSelectedTags)
+            {
+                hashTagList.push(`\n #${e.innerHTML} `);
+            }
+        });
+        hashTagList.push(`
+    
+        ${currentDate}`);
+
+        console.log(hashTagList)
+
+        navigator.clipboard.writeText(hashTagList);
+    }
     
     myHashTagItems.forEach(e => {
         if(e.style.backgroundColor == colorForSelectedTags)
@@ -90,15 +115,15 @@ function getSelectedHashTags()
 
     
 
-    hashTagList.push(`
+    /* hashTagList.push(`
     
     ${currentDate}`);
 
     console.log(hashTagList)
 
-    navigator.clipboard.writeText(hashTagList);
+    navigator.clipboard.writeText(hashTagList); */
     
-}
+} /* getSelectedHashTags() END */
 
 /* Just adding a comment so that I can commit to GitHub again to test */
 
