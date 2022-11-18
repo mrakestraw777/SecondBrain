@@ -55,9 +55,15 @@ const metaHashTags = [
 
 const visitation_HashTags = ['Visited', 'Not_Visited',]
 const meal_Type_HashTags = ['Breakfast', 'Brunch', 'Lunch', 'Dinner']
+const seasonal_Cuisine_HashTags = ['Spring', 'Summer', 'Fall', 'Winter',]
+const diet_Type_HashTags = ['Keto', 'Paleo', 'Vegetarian', 'Vegan', 'Gluten_Free', 'Whole_30',]
 const cuisine_HashTags = [
     'Meal_Type',
         meal_Type_HashTags,
+    'Seasonal',
+        seasonal_Cuisine_HashTags,
+    'Diet_Type',
+        diet_Type_HashTags,
     'Asian',
     'Americas',
     'African',
@@ -108,6 +114,7 @@ const food_HashTags = [
     'Restaurants',
         cuisine_HashTags,
 ]
+const questions_HashTags = ['Not_Answered', 'Answered',]
 const general_Interest_HashTags = [
     'Inspiration',
     'Food',
@@ -118,6 +125,8 @@ const personalHashTags = [
         uyen_HashTags,
     'General_Interest',
         general_Interest_HashTags,
+    'Question_To_Be_Answered',
+        questions_HashTags,
     'Shopping',
         to_Do_HashTags,
     'Brings_Happiness',
