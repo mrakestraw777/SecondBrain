@@ -1,62 +1,166 @@
-const metaArray = [
+function makeUL(array, appendTo)
+{
+    let newUL = document.createElement('ul');
+    for(let x = 0; x < array.length; x++)
+    {
+        if (Array.isArray(array[x]))
+        {
+            makeUL(array[x], newUL);
+        } else
+        {
+            let newLi = document.createElement('li');
+            newLi.appendChild(document.createTextNode(array[x]));
+            newUL.appendChild(newLi);
+            appendTo.appendChild(newUL);
+        }
+    }
+}
+ 
+/*  var myArray = ['Value 1', ['Inner value 1', ['Inner-inner 1', ['Inner-Inner-Inner 1'],'Inner-Inner 2',],'Inner value 2', 'Inner value 3', 'Inner value 4'], 'Value 2', 'Value 3', 'Value 4', 'Value 5', ['Inner value 1', ['Inner-inner 1', ['Inner-Inner-Inner 1'],'Inner-Inner 2',]], 'Value 6'];  */
+const co_workersHashTags = ['Bill', 'Harris', 'Drew', 'Savannah', 'Stephen', 'Tony', 'Mark']
+const familyHashTags = ['Dad', 'Mom', 'David', 'Katie',]
+const friendsHashTags = ['Matthew', 'Joey']
+const shareWithHashTags = ['Uyên', 'Family', familyHashTags, 'Friends', friendsHashTags, 'Co-Workers', co_workersHashTags]
+const sharingHashTags = ['Not_Shared', 'Shared', 'Share_With', shareWithHashTags,]
+
+const progressHashTags = ['Not_Started', 'Not_Done', 'In_Progress', 'Finished']
+const linkStatusHashTags = ['Not_Linked', 'Linked']
+const linkingHashTags = ['Pro_Affirmative_Supporting', 'Anti_Opposed_Against', 'Link_Status', linkStatusHashTags]
+
+
+const digital_Resources = ['Video','Book','Audio','Website']
+const physical_Resources = ['Book']
+const resourcesHashTags = [
+    'Digital',
+        digital_Resources,
+    'Physical',
+        physical_Resources,
+]
+const repeatOptions = ['Daily', 'Weekly', 'Monthly', 'Annual', 'Custome',]
+const to_Do_HashTags = ['Task', 'Shopping', 'Time_Sensitive', 'One_Time', 'Repeated', repeatOptions,]
+
+const metaHashTags = [
+    'Sharing', 
+        sharingHashTags, 
+    'Progress', 
+        progressHashTags,
+    'Link_To_Another_Note', 
+        linkingHashTags,
+    'Resources', 
+        resourcesHashTags,
+    'To_Do',
+        to_Do_HashTags,
+];
+
+
+const visitation_HashTags = ['Visited', 'Not_Visited',]
+const meal_Type_HashTags = ['Breakfast', 'Brunch', 'Lunch', 'Dinner']
+const cuisine_HashTags = [
+    'Meal_Type',
+        meal_Type_HashTags,
+    'Asian',
+    'Americas',
+    'African',
+    'European',
+    'Oceanic',    
+]
+
+const restaurants_HashTags = [
+    'Cuisine',
+        cuisine_HashTags,
+    'Gluten_Free_Friendly',
+    'Visitation_Status',
+        visitation_HashTags,
+    'Visit_With',
+        shareWithHashTags,
+
+]
+const going_Out_HashTags = [
+    'Restaurants',
+        restaurants_HashTags,
+    'Activities',
+]
+const staying_In_HashTags = ['Movie_Night',]
+const dating_HashTags = [
+    'Going_Out',
+        going_Out_HashTags,
+    'Staying_In',
+        staying_In_HashTags,
+    'Suggestions_From_Others',
+]
+const traveling_HashTags = [
+    'Visitation_Status',
+        visitation_HashTags,
+]
+const uyen_HashTags = [
+    'Dating',
+        dating_HashTags,
+    'Memories',
+    'Traveling',
+        traveling_HashTags,
+    'To_Do',
+        to_Do_HashTags,
+]
+
+const food_HashTags = [
+    'Recipes',
+        cuisine_HashTags,
+    'Restaurants',
+        cuisine_HashTags,
+]
+const general_Interest_HashTags = [
+    'Inspiration',
+    'Food',
+        food_HashTags,
+]
+const personalHashTags = [
+    'Uyên',
+        uyen_HashTags,
+    'General_Interest',
+        general_Interest_HashTags,
+    'Shopping',
+        to_Do_HashTags,
+    'Brings_Happiness',
+]
+const projectHashTags = [
+    'Work',
+    'Therapy',
+    'LIFE_Behavior_Consulting',
+    'Second_Brain',
+]
+const myHashTagArray = [
+    'Personal',
+        personalHashTags,
+    'Project',
+        projectHashTags, 
+    'Archive_(Misc)',
     'META',
-        ['Sharing',
-            ["Shared", 
-            "Not_Shared",],
-        ],
-        ['Progress',
-            [
-                'Not_Started',
-                'In_Progress',
-                'Finished',
-            ],
-        ],
-        ['Linked',],
-        ['Resources',],
-        ['To_Do',],
-] /* END OF META ARRAY */
+        metaHashTags
+];
+ 
 
+  var div = document.getElementById('arrayDiv');
 
-
-const arrayToUL = (arr) => {
-    const ul = document.createElement("ul");
-    ul.append(
-      ...arr.map((value) => {
-        if (Array.isArray(value)) return arrayToUL(value);
-        const li = document.createElement("li");
-        li.classList.add("hashTagItem", "collapsible");
-        li.textContent = value;
-        return li;
-      })
-    );
-    return ul;
-  };
+  makeUL(myHashTagArray, div);
 
   
-  const hashTagArray = [
-      "Personal", 
-        ['Uyen', dateArray,
-            ['Memories',], 
-            [metaArray,],
-          ],/* end of uyen */
-        ['General_Interest',], 
-        ['Brings_Happiness',], 
-        ['Shopping',], 
-        metaArray,
-      
-      "Project", metaArray, 
   
-      "ARCHIVE",
-  ]; /* END OF HASHTAG ARRAY */
 
-  document.getElementById('arrayDiv').appendChild(arrayToUL(metaArray));
+
+
+
   
+const myHashTagItems = document.querySelectorAll("li");
+/* Adds classes .hashTagItem and .collapsible to all LIs */
+myHashTagItems.forEach(placeHolderForCurrentDivInLoop => {
+    placeHolderForCurrentDivInLoop.classList.add("hashTagItem", "collapsible")
+})
+
 /* This const selects all hashtags in the HTML
 DOC so that a later forEach loop can place a
 "click" evenListener on them for further
 manipulation*/
 
-const myHashTagItems = document.querySelectorAll("li");
 // const secondBrainNoteOrLink = JSON.stringify(document.querySelectorAll("#secondBrainNote"));
 var colorForSelectedTags = "rgb(205, 205, 205)";
 var currentDate = new Date;
@@ -69,15 +173,16 @@ for (i = 0; i < myHashTagItems.length; i++) {
 
   
 /* adds a single click event to all LIs gather by the coll array */
-var coll = document.querySelectorAll("li");
+var coll = document.querySelectorAll("li.hashTagItem");
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
-    if (content.style.display == "block" && !content.classList.contains("hashTagItem")) {
+    console.log(content)
+    if ((content.style.display == "list-item") && !content.classList.contains("hashTagItem")) {
       content.style.display = "none";
     } else {
-      content.style.display = "block";
+      content.style.display = "list-item";
     }
   });
 }
@@ -103,10 +208,7 @@ function selectedNumber(input)
 }
 
 
-/* Adds classes .hashTagItem and .collapsible to all LIs */
-myHashTagItems.forEach(placeHolderForCurrentDivInLoop => {
-    placeHolderForCurrentDivInLoop.classList.add("hashTagItem", "collapsible")
-})
+
 
 /* Places a DBL CLICK event on all LIs */
 myHashTagItems.forEach(placeHolderForCurrentDivInLoop => {
@@ -169,15 +271,4 @@ function getSelectedHashTags()
             e.style.backgroundColor = 'white';
         }
     })
-
-    
-
-    /* hashTagList.push(`
-    
-    ${currentDate}`);
-
-    console.log(hashTagList)
-
-    navigator.clipboard.writeText(hashTagList); */
-    
-} /* getSelectedHashTags() END */
+}
