@@ -25,7 +25,7 @@ const sharingHashTags = ['Not_Shared', 'Shared', 'Share_With', shareWithHashTags
 
 const progressHashTags = ['Not_Started', 'Not_Done', 'In_Progress', 'Finished']
 const linkStatusHashTags = ['Not_Linked', 'Linked']
-const linkingHashTags = ['Pro_Affirmative_Supporting', 'Anti_Opposed_Against', 'Link_Status', linkStatusHashTags]
+const linkingHashTags = ['Pro_Affirmative_Supporting', 'Anti_Opposed_Against', 'Feels_Related', 'Link_Status', linkStatusHashTags]
 
 
 const digital_Resources = ['Video','Book','Audio','Website']
