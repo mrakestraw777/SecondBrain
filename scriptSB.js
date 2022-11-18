@@ -36,7 +36,7 @@ const resourcesHashTags = [
     'Physical',
         physical_Resources,
 ]
-const repeatOptions = ['Daily', 'Weekly', 'Monthly', 'Annual', 'Custome',]
+const repeatOptions = ['Daily', 'Weekly', 'Monthly', 'Annual', 'Custom_TBD',]
 const to_Do_HashTags = ['Task', 'Shopping', 'Time_Sensitive', 'One_Time', 'Repeated', repeatOptions,]
 
 const metaHashTags = [
