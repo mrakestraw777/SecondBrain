@@ -136,6 +136,8 @@ const projectHashTags = [
     'Therapy',
     'LIFE_Behavior_Consulting',
     'Second_Brain',
+    'META',
+        metaHashTags,
 ]
 const myHashTagArray = [
     'Personal',
