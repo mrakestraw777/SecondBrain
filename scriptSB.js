@@ -42,7 +42,7 @@ const to_Do_HashTags = ['Task', 'Shopping', 'Time_Sensitive', 'One_Time', 'Repea
 const metaHashTags = [
     'Sharing', 
         sharingHashTags, 
-    'Done_/_Progress', 
+    'Done/Progress', 
         progressHashTags,
     'Link_To_Another_Note', 
         linkingHashTags,
@@ -114,7 +114,7 @@ const food_HashTags = [
     'Restaurants',
         cuisine_HashTags,
 ]
-const questions_HashTags = ['Not_Answered', 'Answered',]
+const questions_HashTags = ['UnAnswered_Question', 'Answered_Question',]
 const general_Interest_HashTags = [
     'Inspiration',
     'Food',
@@ -126,7 +126,7 @@ const personalHashTags = [
         uyen_HashTags,
     'General_Interest',
         general_Interest_HashTags,
-    'Question_To_Be_Answered',
+    'Questions',
         questions_HashTags,
     'Shopping',
         to_Do_HashTags,
@@ -137,7 +137,7 @@ const projectHashTags = [
     'Therapy',
     'LIFE_Behavior_Consulting',
     'Second_Brain',
-    'Question_To_Be_Answered',
+    'Questions',
         questions_HashTags,
     'META',
         metaHashTags,
