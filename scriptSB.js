@@ -17,9 +17,9 @@ function makeUL(array, appendTo)
 }
  
 /*  var myArray = ['Value 1', ['Inner value 1', ['Inner-inner 1', ['Inner-Inner-Inner 1'],'Inner-Inner 2',],'Inner value 2', 'Inner value 3', 'Inner value 4'], 'Value 2', 'Value 3', 'Value 4', 'Value 5', ['Inner value 1', ['Inner-inner 1', ['Inner-Inner-Inner 1'],'Inner-Inner 2',]], 'Value 6'];  */
-const co_workersHashTags = ['Bill', 'Harris', 'Drew', 'Savannah', 'Stephen', 'Tony', 'Mark']
+const co_workersHashTags = ['Bill_Bristow', 'Harris_Bristow', 'Drew_Bunson', 'Savannah_Willis', 'Stephen_Beaudrot', 'Tony_Skinner', 'Mark_Burnett']
 const familyHashTags = ['Dad', 'Mom', 'David', 'Katie',]
-const friendsHashTags = ['Matthew', 'Joey']
+const friendsHashTags = ['Matthew_Wamboldt', 'Joey']
 const shareWithHashTags = ['Uyên', 'Family', familyHashTags, 'Friends', friendsHashTags, 'Co-Workers', co_workersHashTags]
 const sharingHashTags = ['Not_Shared', 'Shared', 'Share_With', shareWithHashTags,]
 
@@ -42,7 +42,7 @@ const to_Do_HashTags = ['Task', 'Shopping', 'Time_Sensitive', 'One_Time', 'Repea
 const metaHashTags = [
     'Sharing', 
         sharingHashTags, 
-    'Progress', 
+    'Done_/_Progress', 
         progressHashTags,
     'Link_To_Another_Note', 
         linkingHashTags,
@@ -119,6 +119,7 @@ const general_Interest_HashTags = [
     'Inspiration',
     'Food',
         food_HashTags,
+    'Look_At_Later'
 ]
 const personalHashTags = [
     'Uyên',
