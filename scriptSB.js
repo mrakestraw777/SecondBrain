@@ -253,7 +253,7 @@ function getSelectedHashTags()
             {
                 
                 // hashTagList.push(`\n #${e.innerHTML} `);
-                hashTagList.push(`#${e.innerHTML} `);
+                hashTagList.push(` #${e.innerHTML} `);
             }
         });
         /* hashTagList.push(`
