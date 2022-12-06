@@ -14,6 +14,7 @@ function makeUL(array, appendTo)
             appendTo.appendChild(newUL);
         }
     }
+    
 }
  
 /*  var myArray = ['Value 1', ['Inner value 1', ['Inner-inner 1', ['Inner-Inner-Inner 1'],'Inner-Inner 2',],'Inner value 2', 'Inner value 3', 'Inner value 4'], 'Value 2', 'Value 3', 'Value 4', 'Value 5', ['Inner value 1', ['Inner-inner 1', ['Inner-Inner-Inner 1'],'Inner-Inner 2',]], 'Value 6'];  */
@@ -36,7 +37,7 @@ const resourcesHashTags = [
     'Physical',
         physical_Resources,
 ]
-const repeatOptions = ['Daily', 'Weekly', 'Monthly', 'Annual', 'Custom_TBD',]
+const repeatOptions = ['Repeated', 'Daily', 'Weekly', 'Monthly', 'Annual', 'Custom_TBD',]
 const to_Do_HashTags = ['Task', 'Shopping', 'Time_Sensitive', 'One_Time', 'Repeated', repeatOptions,]
 
 const metaHashTags = [
@@ -121,7 +122,10 @@ const general_Interest_HashTags = [
         food_HashTags,
     'Look_At_Later'
 ]
+
+const task_Array = ['hello',]
 const personalHashTags = [
+    'Personal',
     'Uyên',
         uyen_HashTags,
     'General_Interest',
@@ -131,6 +135,8 @@ const personalHashTags = [
     'Shopping',
         to_Do_HashTags,
     'Brings_Happiness',
+    'Task',
+        task_Array,
 ]
 const projectHashTags = [
     'Work',
@@ -149,7 +155,11 @@ const myHashTagArray = [
         projectHashTags, 
     'Archive_(Misc)',
     'META',
-        metaHashTags
+        metaHashTags,
+    'SHARING', 
+        sharingHashTags,
+    'TASKs',
+        to_Do_HashTags,
 ];
  
 
