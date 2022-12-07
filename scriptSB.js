@@ -38,7 +38,7 @@ const resourcesHashTags = [
         physical_Resources,
 ]
 const repeatOptions = ['Repeated', 'Daily', 'Weekly', 'Monthly', 'Annual', 'Custom_TBD',]
-const to_Do_HashTags = ['Task', 'Shopping', 'Time_Sensitive', 'One_Time', 'Repeated', repeatOptions,]
+const to_Do_HashTags = ['Task', 'Not_Done', 'Done', 'Shopping', 'Time_Sensitive', 'One_Time', 'Repeated', repeatOptions,]
 
 const metaHashTags = [
     'Sharing', 
@@ -110,6 +110,7 @@ const uyen_HashTags = [
 ]
 
 const food_HashTags = [
+    'Food',
     'Recipes',
         cuisine_HashTags,
     'Restaurants',
@@ -117,13 +118,14 @@ const food_HashTags = [
 ]
 const questions_HashTags = ['UnAnswered_Question', 'Answered_Question',]
 const general_Interest_HashTags = [
+    'General_Interest',
     'Inspiration',
     'Food',
         food_HashTags,
+    'Fitness',
     'Look_At_Later'
 ]
 
-const task_Array = ['hello',]
 const personalHashTags = [
     'Personal',
     'Uyên',
@@ -132,11 +134,7 @@ const personalHashTags = [
         general_Interest_HashTags,
     'Questions',
         questions_HashTags,
-    'Shopping',
-        to_Do_HashTags,
     'Brings_Happiness',
-    'Task',
-        task_Array,
 ]
 const projectHashTags = [
     'Work',
