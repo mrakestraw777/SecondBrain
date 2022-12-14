@@ -37,8 +37,9 @@ const resourcesHashTags = [
     'Physical',
         physical_Resources,
 ]
+const appointmentArray = ['Appointment', 'Therapy','LIFE_Behavior_Consulting','Egoscue_Physical_Therapy', ]
 const repeatOptions = ['Repeated', 'Daily', 'Weekly', 'Monthly', 'Annual', 'Custom_TBD',]
-const to_Do_HashTags = ['Task', 'Not_Done', 'Done', 'Shopping', 'Time_Sensitive', 'One_Time', 'Repeated', repeatOptions,]
+const to_Do_HashTags = ['Task', 'Appointment',appointmentArray,'Not_Done', 'Done',  'Shopping', 'Time_Sensitive', 'One_Time', 'Repeated', repeatOptions,]
 
 const metaHashTags = [
     'Sharing', 
