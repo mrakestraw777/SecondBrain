@@ -101,6 +101,7 @@ const traveling_HashTags = [
         visitation_HashTags,
 ]
 const uyen_HashTags = [
+    'Uyen',
     'Dating',
         dating_HashTags,
     'Memories',
