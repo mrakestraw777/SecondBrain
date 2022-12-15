@@ -251,7 +251,7 @@ function getSelectedHashTags()
     const secondBrainNoteOrLink = document.getElementById('secondBrainNote').value;
     console.log(secondBrainNoteOrLink);
 
-    let textifiedText = JSON.stringify(secondBrainNoteOrLink);
+    let textifiedText = secondBrainNoteOrLink;
     console.log(`This is the textified TextArea:  ${textifiedText.length}`)
 
     if(textifiedText.length <= 2)
@@ -274,7 +274,7 @@ function getSelectedHashTags()
         navigator.clipboard.writeText(hashTagList);
     } else
     {
-        let hashTagList = [`${textifiedText}\nExplanatory Note:  `];
+        let hashTagList = [`${textifiedText}\n\nExplanatory Note:  `];
         myHashTagItems.forEach(e => {
             if(e.style.backgroundColor == colorForSelectedTags)
             {
