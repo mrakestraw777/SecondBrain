@@ -138,10 +138,16 @@ const personalHashTags = [
         questions_HashTags,
     'Brings_Happiness',
 ]
+
+const LIFE_Behavior_Consulting_Links = ["Renee's Zoom:  https://us02web.zoom.us/my/lifebehaviorconsulting.careers.rf?pwd=dK5yXuWm4QpsDNyeAKe-3VH6-8646Q.1", ]
+
+const LIFE_Behavior_Consulting_Hashtags = ['LIFE_Behavior_Consulting', 'Links', LIFE_Behavior_Consulting_Links,]
+
 const projectHashTags = [
     'Work',
     'Therapy',
     'LIFE_Behavior_Consulting',
+    LIFE_Behavior_Consulting_Hashtags,
     'Second_Brain',
     'Questions',
         questions_HashTags,
