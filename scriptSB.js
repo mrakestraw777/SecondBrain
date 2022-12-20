@@ -18,7 +18,7 @@ function makeUL(array, appendTo)
 }
  
 /*  var myArray = ['Value 1', ['Inner value 1', ['Inner-inner 1', ['Inner-Inner-Inner 1'],'Inner-Inner 2',],'Inner value 2', 'Inner value 3', 'Inner value 4'], 'Value 2', 'Value 3', 'Value 4', 'Value 5', ['Inner value 1', ['Inner-inner 1', ['Inner-Inner-Inner 1'],'Inner-Inner 2',]], 'Value 6'];  */
-const co_workersHashTags = ['Bill_Bristow', 'Harris_Bristow', 'Drew_Bunson', 'Savannah_Willis', 'Stephen_Beaudrot', 'Tony_Skinner', 'Mark_Burnett']
+const co_workersHashTags = ['Bill_Bristow', 'Harris_Bristow', 'Drew_Bunson', 'Savanna_Willis', 'Stephen_Beaudrot', 'Tony_Skinner', 'Mark_Burnett']
 const familyHashTags = ['Dad', 'Mom', 'David', 'Katie',]
 const friendsHashTags = ['Matthew_Wamboldt', 'Joey']
 const shareWithHashTags = ['Uyên', 'Family', familyHashTags, 'Friends', friendsHashTags, 'Co-Workers', co_workersHashTags]
@@ -58,7 +58,7 @@ const metaHashTags = [
 const visitation_HashTags = ['Visited', 'Not_Visited',]
 const meal_Type_HashTags = ['Breakfast', 'Brunch', 'Lunch', 'Dinner']
 const seasonal_Cuisine_HashTags = ['Spring', 'Summer', 'Fall', 'Winter',]
-const diet_Type_HashTags = ['Keto', 'Paleo', 'Vegetarian', 'Vegan', 'Gluten_Free', 'Whole_30',]
+const diet_Type_HashTags = ['Keto', 'Paleo', 'Vegetarian', 'Vegan', 'Gluten_Free_Diet', 'Whole_30',]
 const cuisine_HashTags = [
     'Meal_Type',
         meal_Type_HashTags,
@@ -89,12 +89,16 @@ const going_Out_HashTags = [
     'Activities',
 ]
 const staying_In_HashTags = ['Movie_Night',]
+const date_result_Array = ['Amazing_Success', 'Acceptable_Neutral', 'Bad_Date_Idea_No_Repeat',]
 const dating_HashTags = [
+    'Date_With_Uyen',
     'Going_Out',
         going_Out_HashTags,
     'Staying_In',
         staying_In_HashTags,
     'Suggestions_From_Others',
+    'Date_Result',
+        date_result_Array,
 ]
 const traveling_HashTags = [
     'Visitation_Status',
@@ -102,7 +106,7 @@ const traveling_HashTags = [
 ]
 const uyen_HashTags = [
     'Uyen',
-    'Dating',
+    'Date_With_Uyen',
         dating_HashTags,
     'Memories',
     'Traveling',
@@ -116,7 +120,7 @@ const food_HashTags = [
     'Recipes',
         cuisine_HashTags,
     'Restaurants',
-        cuisine_HashTags,
+    restaurants_HashTags,
 ]
 const questions_HashTags = ['UnAnswered_Question', 'Answered_Question',]
 const general_Interest_HashTags = [
@@ -148,18 +152,20 @@ const projectHashTags = [
     'Therapy',
     'LIFE_Behavior_Consulting',
     LIFE_Behavior_Consulting_Hashtags,
+    'Better_At_Cooking',
     'Second_Brain',
     'Questions',
         questions_HashTags,
     'META',
         metaHashTags,
+    'Look_At_Later',
 ]
 const myHashTagArray = [
     'Personal',
         personalHashTags,
     'Project',
         projectHashTags, 
-    'Archive_(Misc)',
+    // 'Archive_(Misc)',
     'META',
         metaHashTags,
     'SHARING', 
