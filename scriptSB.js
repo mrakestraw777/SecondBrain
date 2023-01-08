@@ -54,10 +54,10 @@ const metaHashTags = [
         to_Do_HashTags,
 ];
 
-
+const holiday_Food = ['Holiday_Food', 'Christmas', 'Thanksgiving', 'Halloween', 'Fourth_of_July', 'New_Years', "Lunar_New_Year",]
 const visitation_HashTags = ['Visited', 'Not_Visited',]
-const meal_Type_HashTags = ['Breakfast', 'Brunch', 'Lunch', 'Dinner']
-const seasonal_Cuisine_HashTags = ['Spring', 'Summer', 'Fall', 'Winter',]
+const meal_Type_HashTags = ['Breakfast', 'Brunch', 'Lunch', 'Dinner',]
+const seasonal_Cuisine_HashTags = ['Spring', 'Summer', 'Fall', 'Winter','Holiday_Food', holiday_Food,]
 const diet_Type_HashTags = ['Keto', 'Paleo', 'Vegetarian', 'Vegan', 'Gluten_Free_Diet', 'Whole_30',]
 const cuisine_HashTags = [
     'Meal_Type',
@@ -128,8 +128,7 @@ const questions_HashTags = ['UnAnswered_Question', 'Answered_Question',]
 const general_Interest_HashTags = [
     'General_Interest',
     'Inspiration',
-    'Food',
-        food_HashTags,
+    
     'Fitness',
     'Look_At_Later'
 ]
@@ -140,6 +139,8 @@ const personalHashTags = [
         uyen_HashTags,
     'General_Interest',
         general_Interest_HashTags,
+    'Food',
+        food_HashTags,
     'Questions',
         questions_HashTags,
     'Brings_Happiness',
