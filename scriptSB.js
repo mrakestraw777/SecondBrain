@@ -74,6 +74,7 @@ const cuisine_HashTags = [
 ]
 
 const restaurants_HashTags = [
+    "Restaurants",
     'Cuisine',
         cuisine_HashTags,
     'Gluten_Free_Friendly',
@@ -84,12 +85,13 @@ const restaurants_HashTags = [
 
 ]
 const going_Out_HashTags = [
+    'Going_Out',
     'Restaurants',
         restaurants_HashTags,
     'Activities',
 ]
 const staying_In_HashTags = ['Movie_Night',]
-const date_result_Array = ['Amazing_Success', 'Acceptable_Neutral', 'Bad_Date_Idea_No_Repeat',]
+const date_result_Array = ['Date_Result','Amazing_Success', 'Very_Good','Acceptable_Neutral', 'Bad_Date_Idea_No_Repeat',]
 const dating_HashTags = [
     'Date_With_Uyen',
     'Going_Out',
