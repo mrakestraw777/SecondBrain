@@ -32,6 +32,7 @@ const linkingHashTags = ['Pro_Affirmative_Supporting', 'Anti_Opposed_Against', '
 const digital_Resources = ['Video','Book','Audio','Website']
 const physical_Resources = ['Book']
 const resourcesHashTags = [
+    'Resources',
     'Digital',
         digital_Resources,
     'Physical',
