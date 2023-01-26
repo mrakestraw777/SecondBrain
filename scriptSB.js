@@ -109,6 +109,7 @@ const traveling_HashTags = [
 ]
 const uyen_HashTags = [
     'Uyen',
+    'Uyên_Seal_Of_Approval',
     'Date_With_Uyen',
         dating_HashTags,
     'Memories',
@@ -152,6 +153,7 @@ const LIFE_Behavior_Consulting_Links = ["Renee's Zoom:  https://us02web.zoom.us/
 const LIFE_Behavior_Consulting_Hashtags = ['LIFE_Behavior_Consulting', 'Links', LIFE_Behavior_Consulting_Links,]
 
 const projectHashTags = [
+    'Fossil_Future',
     'Work',
     'Therapy',
     'LIFE_Behavior_Consulting',
