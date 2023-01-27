@@ -152,7 +152,7 @@ const personalHashTags = [
 
 const LIFE_Behavior_Consulting_Links = ["Renee's Zoom:  https://us02web.zoom.us/my/lifebehaviorconsulting.careers.rf?pwd=dK5yXuWm4QpsDNyeAKe-3VH6-8646Q.1", ]
 
-const LIFE_Behavior_Consulting_Hashtags = ['LIFE_Behavior_Consulting', 'Links', LIFE_Behavior_Consulting_Links,]
+const LIFE_Behavior_Consulting_Hashtags = ['LIFE_Behavior_Consulting', 'Links', LIFE_Behavior_Consulting_Links, 'Energy_Restoration',]
 
 const projectHashTags = [
     'Fossil_Future',
