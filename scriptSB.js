@@ -60,6 +60,7 @@ const visitation_HashTags = ['Visited', 'Not_Visited',]
 const meal_Type_HashTags = ['Breakfast', 'Brunch', 'Lunch', 'Dinner',]
 const seasonal_Cuisine_HashTags = ['Spring', 'Summer', 'Fall', 'Winter','Holiday_Food', holiday_Food,]
 const diet_Type_HashTags = ['Keto', 'Paleo', 'Vegetarian', 'Vegan', 'Gluten_Free_Diet', 'Whole_30',]
+const asian_Cuisine_HashTags = ['Korean', 'Taiwanese', 'Vietnamese',]
 const cuisine_HashTags = [
     'Meal_Type',
         meal_Type_HashTags,
@@ -68,6 +69,7 @@ const cuisine_HashTags = [
     'Diet_Type',
         diet_Type_HashTags,
     'Asian',
+        asian_Cuisine_HashTags,
     'Americas',
     'African',
     'European',
