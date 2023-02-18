@@ -26,7 +26,7 @@ const sharingHashTags = ['Not_Shared', 'Shared', 'Share_With', shareWithHashTags
 
 const progressHashTags = ['Not_Started', 'Not_Done', 'In_Progress', 'Finished']
 const linkStatusHashTags = ['Not_Linked', 'Linked']
-const linkingHashTags = ['Pro_Affirmative_Supporting', 'Anti_Opposed_Against', 'Feels_Related', 'Link_Status', linkStatusHashTags]
+const linkingHashTags = ['Link_To_Answer','Link_To_Question','Pro_Affirmative_Supporting', 'Anti_Opposed_Against', 'Feels_Related', 'Link_Status', linkStatusHashTags]
 
 
 const digital_Resources = ['Video','Book','Audio','Website']
@@ -61,7 +61,7 @@ const visitation_HashTags = ['Visited', 'Not_Visited',]
 const meal_Type_HashTags = ['Breakfast', 'Brunch', 'Lunch', 'Dinner',]
 const seasonal_Cuisine_HashTags = ['Spring', 'Summer', 'Fall', 'Winter','Holiday_Food', holiday_Food,]
 const diet_Type_HashTags = ['Keto', 'Paleo', 'Vegetarian', 'Vegan', 'Gluten_Free_Diet', 'Whole_30',]
-const asian_Cuisine_HashTags = ['Korean', 'Taiwanese', 'Vietnamese',]
+const asian_Cuisine_HashTags = ['Chinese','Korean', 'Taiwanese', 'Vietnamese',]
 const cuisine_HashTags = [
     'Meal_Type',
         meal_Type_HashTags,
@@ -157,6 +157,7 @@ const LIFE_Behavior_Consulting_Hashtags = ['LIFE_Behavior_Consulting', 'Links', 
 
 const projectHashTags = [
     'Fossil_Future',
+    'Gödel_Escher_Bach',
     'Work',
     'Therapy',
     'LIFE_Behavior_Consulting',
