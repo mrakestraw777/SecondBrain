@@ -10,13 +10,13 @@
         <h2>Previous Service</h2>
         <form action="">
             <label for="engine_air_prev">Engine Air</label> 
-            <input id="engine_air_prev" name="engine_air_prev" type="text"> <br>
+            <input class="part" id="engine_air_prev" name="engine_air_prev" type="text"> <br>
 
             <label for="cabin_air_prev">Cabin Air</label> 
-            <input id="cabin_air_prev" name="cabin_air_prev" type="text"> <br>
+            <input class="part" id="cabin_air_prev" name="cabin_air_prev" type="text"> <br>
 
             <label for="wiper_blades_prev">Wiper Blades</label> 
-            <input id="wiper_blades_prev" name="wiper_blades_prev" type="text"> <br>
+            <input class="part" id="wiper_blades_prev" name="wiper_blades_prev" type="text"> <br>
 
             <label for="previous_mileage">Previous Mileage</label> 
             <input id="previous_mileage" name="previous_mileage" type="number"><br>
@@ -26,17 +26,20 @@
         </form>
     </div>
 
-    <div>
+    <div id="next_service">
         <h2>Next Service</h2>
-        <p id="next_air"></p>
-        <p class="next_cabin"></p>
-        <p class="next_wiper"></p>
-        <p class="next_"></p>
-        <p class="next_"></p>
+        <p class="next_service"></p>
+        <p class="next_service"></p>
+        <p class="next_service"></p>
+        <p class="next_service"></p>
+        <p class="next_service"></p>
     </div>
 
-    <button onclick="next_service()">Copy HashTags to Clipboard</button>
 
+
+    <button onclick="next_service()">Calculate</button>
+    <button onclick="copyParagraphsFromNextService()">Copy HashTags to Clipboard</button>
+    
     <script src="next_service.js"></script>
 
 </body>
