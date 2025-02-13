@@ -3,42 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>When to check filters next</title>
 </head>
 <body>
-    <div>
-        <h2>Previous Service</h2>
-        <form action="">
-            <label for="engine_air_prev">Engine Air</label> 
-            <input class="part" id="engine_air_prev" name="engine_air_prev" type="text"> <br>
-
-            <label for="cabin_air_prev">Cabin Air</label> 
-            <input class="part" id="cabin_air_prev" name="cabin_air_prev" type="text"> <br>
-
-            <label for="wiper_blades_prev">Wiper Blades</label> 
-            <input class="part" id="wiper_blades_prev" name="wiper_blades_prev" type="text"> <br>
-
-            <label for="previous_mileage">Previous Mileage</label> 
-            <input id="previous_mileage" name="previous_mileage" type="number"><br>
-
-            <label for="previous_date">Previous Date</label> 
-            <input id="previous_date" name="previous_date" type="month">
-        </form>
-    </div>
-
-    <div id="next_service">
-        <h2>Next Service</h2>
-        <p class="next_service"></p>
-        <p class="next_service"></p>
-        <p class="next_service"></p>
-        <p class="next_service"></p>
-        <p class="next_service"></p>
-    </div>
+    <label for="airFilter">Air Filter:</label>
+<button type="button" class="collapsible">Air Filter Details</button>
+<div class="content">
+  <label for="airFilterMileage">Mileage:</label>
+  <input type="number" id="airFilterMileage" name="airFilterMileage" placeholder="Enter mileage">
+  <label for="airFilterPart">Part #:</label>
+  <input type="text" id="airFilterPart" name="airFilterPart" placeholder="Enter part number">
+  <label for="airFilterQuantity">Quantity:</label>
+  <input type="number" id="airFilterQuantity" name="airFilterQuantity" min="1" value="1">
+</div>
 
 
 
-    <button onclick="next_service()">Calculate</button>
-    <button onclick="copyParagraphsFromNextService()">Copy HashTags to Clipboard</button>
     
     <script src="next_service.js"></script>
 
